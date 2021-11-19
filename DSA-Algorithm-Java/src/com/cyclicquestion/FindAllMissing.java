@@ -5,7 +5,12 @@ import java.util.List;
 
 //find all disappearedNumber leetcode
 public class FindAllMissing {
-    public List<Integer> findDisappearedNumbers(int[] nums){
+    public static void main(String[] args) {
+        int[] arr = {4,3,2,7,8,2,3,1};
+        List<Integer> list = findDisappearedNumbers(arr);
+        System.out.println(list);
+    }
+    public static List<Integer> findDisappearedNumbers(int[] nums){
         int i = 0;
         while(i < nums.length){
             int correct = nums[i] - 1;
@@ -25,7 +30,7 @@ public class FindAllMissing {
         return ans;
     }
 
-    void swap(int[] arr,int first,int secound){
+    static void swap(int[] arr,int first,int secound){
         int temp = arr[first];
         arr[first] = arr[secound];
         arr[secound] = temp;
