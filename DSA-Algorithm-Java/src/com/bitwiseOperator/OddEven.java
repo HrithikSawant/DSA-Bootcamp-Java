@@ -2,7 +2,7 @@ package com.bitwiseOperator;
 
 public class OddEven {
     public static void main(String[] args) {
-        int n = 67;
+        int n = 6;
         System.out.println(isOdd(n));
     }
 

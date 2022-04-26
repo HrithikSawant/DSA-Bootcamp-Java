@@ -39,3 +39,4 @@ public class Max {
         return maxVal;
     }
 }
+

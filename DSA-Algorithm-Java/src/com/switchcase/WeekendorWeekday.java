@@ -17,7 +17,6 @@ public class WeekendorWeekday {
             case 7:
             case 8:
                 System.out.println("Weekend");
-                break;
             default:
                 System.out.println("Not a proper input");
         }

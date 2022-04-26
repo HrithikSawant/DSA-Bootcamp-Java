@@ -1,6 +1,6 @@
 package com.cyclicquestion;
 //https://leetcode.com/problems/find-the-duplicate-number/
-public class FindDuplicateNumber {
+public class FindDuplicateNumbers {
     public static void main(String[] args) {
         int[] nums = {1,1};
         System.out.println(findDuplicate1(nums));

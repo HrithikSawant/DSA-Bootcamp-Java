@@ -14,21 +14,24 @@ public class Main {
         Student[] list = {hrithik,cloe,ted,smith,adam};
         System.out.println(Arrays.toString(list));
         Arrays.sort(list);
-//        Arrays.sort(list, new Comparator<Student>() {
-//            @Override
-//            public int compare(Student o1, Student o2) {
-//                int diff = (int)(o1.rollno - o2.rollno);
-//
-//                //if diff == 0 ; means both are equal
-//                // diff < 0: means o is bigger else o is smaller
-//                return diff;
-//            }
-//        });
-        System.out.println(Arrays.toString(list));
 
-        if(hrithik.compareTo(cloe) < 0){
-            System.out.println(hrithik.compareTo(cloe));
-            System.out.println("rith has more masks");
-        }
+        Arrays.sort(list, new Comparator<Student>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+                int diff = (int)(o1.rollno - o2.rollno);
+
+                //if diff == 0 ; means both are equal
+                // diff < 0: means o is bigger else o is smaller
+                return diff;
+            }
+        });
+        System.out.println(Arrays.toString(list));
+//
+//        if(cloe.compareTo(hrithik) < 0){
+//            System.out.println(cloe.compareTo(hrithik));
+//            System.out.println("rith has more masks");
+//        }
+
+
     }
 }

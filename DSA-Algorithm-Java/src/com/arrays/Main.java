@@ -12,7 +12,11 @@ public class Main {
         int[] rnos2 = {1,2,3,4,5,6};
 
 
+
         int[] ros; //declaration of array. ros is getting define in stack
         ros = new int[4]; //initialisation actually here object is being created in the memory(heap)
     }
+
+
+
 }

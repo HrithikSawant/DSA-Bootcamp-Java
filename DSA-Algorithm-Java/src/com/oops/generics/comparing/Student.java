@@ -19,6 +19,7 @@ public class Student implements Comparable<Student> {
 
     @Override
     public int compareTo(Student o) {
+
         int diff = (int)(this.marks - o.marks);
 
         //if diff == 0 ; means both are equal
